@@ -7,7 +7,7 @@ pipeline {
                 echo 'Hello World'
                 bat '''
                     cd HelloFX/Maven/hellofx
-                    mvn clean
+                    mvn clean install test
                     '''
 
             }
