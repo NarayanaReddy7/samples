@@ -5,8 +5,11 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                bat 'cd HelloFX/Maven/hellofx'
-                bat 'mvn clean'
+                bat '''
+                    cd HelloFX/Maven/hellofx
+                    mvn clean
+                    '''
+
             }
         }
     }
